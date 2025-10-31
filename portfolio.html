@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arun Busa - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Portfolio of Arun Busa - Computer Engineering Student & Frontend Developer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html,body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    .curved-header { clip-path: ellipse(120% 70% at 50% 0%); }
+    .project-card:hover { transform: translateY(-6px); }
+    .project-card { transition: transform .25s ease, box-shadow .25s ease; }
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+  <header class="fixed top-0 left-0 right-0 z-40">
+    <div class="backdrop-blur-sm bg-white/70 dark:bg-slate-900/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="#home" class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-violet-400 flex items-center justify-center text-white font-bold">AB</div>
+            <span class="font-semibold">Arun Busa</span>
+          </a>
+          <nav class="hidden md:flex items-center gap-6 text-sm">
+            <a href="#about" class="hover:underline">About</a>
+            <a href="#projects" class="hover:underline">Projects</a>
+            <a href="#contact" class="hover:underline">Contact</a>
+          </nav>
+          <div class="flex items-center gap-3">
+            <button id="themeToggle" class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Toggle theme">🌙</button>
+            <a href="#contact" class="hidden sm:inline-block px-4 py-2 bg-indigo-600 text-white rounded-md shadow-sm hover:brightness-105">Hire me</a>
+            <button id="mobileToggle" class="md:hidden p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800">☰</button>
+          </div>
+        </div>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800">
+        <div class="px-4 py-3 flex flex-col gap-2">
+          <a href="#about" class="py-2">About</a>
+          <a href="#projects" class="py-2">Projects</a>
+          <a href="#contact" class="py-2">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="mt-16">
+    <!-- Home Section -->
+    <section id="home" class="relative curved-header bg-gradient-to-r from-indigo-600 to-violet-500 text-white pb-20 pt-24">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Hi — I'm <span class="text-white/95">Arun Busa</span></h1>
+        <p class="mt-4 text-lg max-w-2xl mx-auto">I'm a passionate web developer and computer engineering student at Marwadi University who enjoys building interactive and responsive web applications. I focus on clean UI, usability, and performance.</p>
+        <div class="mt-6 flex justify-center gap-3">
+          <a href="#projects" class="px-4 py-2 bg-white/20 border border-white/30 rounded-md backdrop-blur-sm">View Projects</a>
+        </div>
+        <div class="mt-6 flex justify-center flex-wrap gap-3 text-sm">
+          <div class="inline-flex items-center gap-2 bg-white/10 px-3 py-2 rounded-full">💼 Frontend Developer</div>
+          <div class="inline-flex items-center gap-2 bg-white/10 px-3 py-2 rounded-full">📍 Rajkot, India</div>
+          <div class="inline-flex items-center gap-2 bg-white/10 px-3 py-2 rounded-full">✉️ arunbusa@example.com</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-slate-600 mb-6">Hello! I'm <strong>Arun Busa</strong>, a Computer Engineering student at Marwadi University and aspiring Frontend Developer. I specialize in building responsive and visually engaging websites using HTML, CSS, JavaScript, and frameworks like Tailwind CSS and Bootstrap.</p>
+      <p class="text-slate-600 mb-6">I also have experience working with Java, JDBC, and MySQL, and I’m passionate about exploring new technologies to create impactful digital experiences.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-slate-50 py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="project-card bg-white p-5 rounded-2xl shadow-md hover:shadow-xl">
+            <h3 class="text-xl font-semibold">Personal Portfolio Website</h3>
+            <p class="mt-2 text-slate-600">Interactive website built with HTML, Tailwind CSS, and JavaScript to showcase my skills and projects.</p>
+          </div>
+          <div class="project-card bg-white p-5 rounded-2xl shadow-md hover:shadow-xl">
+            <h3 class="text-xl font-semibold">Student Management System</h3>
+            <p class="mt-2 text-slate-600">Java-based project using JDBC and MySQL for managing student data efficiently.</p>
+          </div>
+          <div class="project-card bg-white p-5 rounded-2xl shadow-md hover:shadow-xl">
+            <h3 class="text-xl font-semibold">E-commerce Website</h3>
+            <p class="mt-2 text-slate-600">Front-end prototype using HTML, CSS, and JS featuring product listings and cart.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-slate-50 py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+        <p class="text-center text-slate-600 mb-8">Have a question or want to collaborate? Send me a message!</p>
+        <form id="contactForm" class="space-y-4 bg-white p-6 rounded-xl shadow-md">
+          <div>
+            <label for="name" class="block font-medium">Name</label>
+            <input id="name" type="text" required class="w-full mt-1 border border-slate-300 rounded-md p-2 focus:border-indigo-500 focus:ring-indigo-500" />
+          </div>
+          <div>
+            <label for="email" class="block font-medium">Email</label>
+            <input id="email" type="email" required class="w-full mt-1 border border-slate-300 rounded-md p-2 focus:border-indigo-500 focus:ring-indigo-500" />
+          </div>
+          <div>
+            <label for="message" class="block font-medium">Message</label>
+            <textarea id="message" rows="4" required class="w-full mt-1 border border-slate-300 rounded-md p-2 focus:border-indigo-500 focus:ring-indigo-500"></textarea>
+          </div>
+          <button type="submit" class="px-6 py-3 bg-indigo-600 text-white rounded-md font-medium hover:brightness-105">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-indigo-600 text-white py-6 text-center">
+      <p>© 2025 Arun Busa. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('mobileToggle').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you! Your message has been submitted successfully.');
+      e.target.reset();
+    });
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
